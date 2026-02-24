@@ -1,0 +1,45 @@
+/* ============================================================
+   HEADER / NAVBAR
+   ============================================================ */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-h);
+    padding: 0 24px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+    transition: background var(--transition), border-color var(--transition);
+}
+
+.header__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__logo {
+    width: 32px;
+    height: 32px;
+}
+
+.header__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.header__title--accent {
+    color: var(--accent);
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

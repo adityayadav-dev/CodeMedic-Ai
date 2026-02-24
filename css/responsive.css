@@ -1,0 +1,35 @@
+/* ============================================================
+   RESPONSIVE — Mobile breakpoints
+   ============================================================ */
+
+@media (max-width: 600px) {
+    .header {
+        padding: 0 12px;
+    }
+
+    .header__title {
+        font-size: 1rem;
+    }
+
+    .btn--ghost span {
+        display: none;
+    }
+
+    /* keep icon only on small screens */
+    .chat {
+        padding: 16px 10px;
+    }
+
+    .message {
+        max-width: 95%;
+    }
+
+    .welcome__title {
+        font-size: 1.25rem;
+    }
+
+    .welcome__suggestions {
+        flex-direction: column;
+        align-items: center;
+    }
+}

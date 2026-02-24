@@ -1,0 +1,55 @@
+/* ============================================================
+   CSS VARIABLES — Light & Dark themes
+   ============================================================ */
+
+:root {
+    /* Colors */
+    --bg: #f5f6fa;
+    --bg-chat: #ffffff;
+    --surface: #ffffff;
+    --surface-hover: #f0f1f5;
+    --border: #e2e4ea;
+    --text: #1a1c23;
+    --text-muted: #6b7085;
+    --accent: #6c5ce7;
+    --accent-hover: #5a4bd4;
+    --accent-light: #ede9fe;
+    --user-bubble: #6c5ce7;
+    --user-text: #ffffff;
+    --ai-bubble: #f0f1f5;
+    --ai-text: #1a1c23;
+    --code-bg: #1e1e2e;
+    --code-text: #cdd6f4;
+    --danger: #e74c3c;
+    --shadow: 0 1px 3px rgba(0, 0, 0, .08);
+
+    /* Typography */
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+
+    /* Spacing */
+    --header-h: 60px;
+    --input-h: 72px;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --transition: .25s ease;
+}
+
+/* ---------- DARK THEME ---------- */
+[data-theme="dark"] {
+    --bg: #0f1117;
+    --bg-chat: #161822;
+    --surface: #1e2030;
+    --surface-hover: #282a3a;
+    --border: #2a2d3e;
+    --text: #e2e4f0;
+    --text-muted: #8a8eaa;
+    --accent: #a78bfa;
+    --accent-hover: #8b6ff0;
+    --accent-light: rgba(167, 139, 250, .12);
+    --user-bubble: #7c3aed;
+    --user-text: #ffffff;
+    --ai-bubble: #1e2030;
+    --ai-text: #e2e4f0;
+    --shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}

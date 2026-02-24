@@ -1,0 +1,13 @@
+/* ============================================================
+   CODEMEDIC AI — Main Stylesheet (imports only)
+   Each section lives in its own file under css/
+   ============================================================ */
+
+@import url('css/variables.css');
+@import url('css/base.css');
+@import url('css/header.css');
+@import url('css/buttons.css');
+@import url('css/chat.css');
+@import url('css/input-bar.css');
+@import url('css/animations.css');
+@import url('css/responsive.css');

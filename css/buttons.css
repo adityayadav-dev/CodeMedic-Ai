@@ -1,0 +1,78 @@
+/* ============================================================
+   BUTTONS — Ghost, Icon, Primary
+   ============================================================ */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font);
+    font-size: .85rem;
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+    transition: background var(--transition), color var(--transition), transform .15s ease;
+}
+
+.btn:active {
+    transform: scale(.96);
+}
+
+/* Ghost / text button */
+.btn--ghost {
+    padding: 8px 14px;
+    background: transparent;
+    color: var(--text-muted);
+}
+
+.btn--ghost:hover {
+    background: var(--surface-hover);
+    color: var(--text);
+}
+
+/* Icon-only button */
+.btn--icon {
+    padding: 8px;
+    background: transparent;
+    color: var(--text-muted);
+}
+
+.btn--icon:hover {
+    background: var(--surface-hover);
+    color: var(--text);
+}
+
+/* Primary (send) button */
+.btn--primary {
+    padding: 8px 12px;
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn--primary:hover:not(:disabled) {
+    background: var(--accent-hover);
+}
+
+.btn--primary:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+}
+
+/* ===== THEME TOGGLE ICONS ===== */
+/* In light mode: show moon, hide sun */
+.icon--sun {
+    display: none;
+}
+
+.icon--moon {
+    display: block;
+}
+
+[data-theme="dark"] .icon--sun {
+    display: block;
+}
+
+[data-theme="dark"] .icon--moon {
+    display: none;
+}

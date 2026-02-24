@@ -1,0 +1,21 @@
+/* ============================================================
+   ANIMATIONS — Keyframes used across components
+   ============================================================ */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    to {
+        transform: translateY(-6px);
+    }
+}
