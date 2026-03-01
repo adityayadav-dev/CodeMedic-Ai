@@ -2,6 +2,9 @@
 
 CodeMedic AI is an intelligent, AI-powered debugging assistant designed to help developers quickly diagnose and fix code issues. Built with a sleek, modern, and responsive UI, it directly integrates the powerful Google Gemini 2.5 Flash model to provide direct, helpful, and concise answers to your programming problems.
 
+**🚀 [Visit the Live App Here!](https://codemedic-ai.onrender.com)**
+
+
 ## ✨ Features
 
 - **Intelligent Debugging**: Ask questions, paste errors, or describe bugs, and get immediate, AI-driven assistance.
