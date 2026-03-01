@@ -130,12 +130,49 @@
 }
 
 /* Code blocks inside AI messages */
-.message__body pre {
-    margin: 8px 0;
-    padding: 12px 14px;
+.code-block {
+    margin: 12px 0;
+    border-radius: var(--radius);
     background: var(--code-bg);
+    border: 1px solid var(--border);
+    box-shadow: 0 0 12px rgba(138, 43, 226, 0.2);
+    /* Glow effect for code */
+    overflow: hidden;
+}
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 14px;
+    background: rgba(0, 0, 0, 0.15);
+    /* Slightly darker header */
+    border-bottom: 1px solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.code-copy-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color var(--transition);
+}
+
+.code-copy-btn:hover {
+    color: var(--accent);
+}
+
+.code-block pre {
+    margin: 0;
+    padding: 12px 14px;
     color: var(--code-text);
-    border-radius: var(--radius-sm);
     overflow-x: auto;
     font-family: var(--font-mono);
     font-size: .82rem;

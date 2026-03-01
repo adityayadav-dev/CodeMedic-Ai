@@ -15,6 +15,8 @@
     max-width: 800px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    /* allow attachments to push input down if needed */
     align-items: flex-end;
     gap: 8px;
     background: var(--bg);
@@ -22,6 +24,53 @@
     border-radius: var(--radius);
     padding: 8px 12px;
     transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.attachments-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 4px;
+    /* Space between chips and textarea */
+}
+
+/* Hide container when empty */
+.attachments-container:empty {
+    display: none;
+}
+
+.attachment-chip {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    font-size: 0.8rem;
+    color: var(--text);
+    max-width: 200px;
+}
+
+.attachment-chip span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.attachment-btn-remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attachment-btn-remove:hover {
+    color: #ff4444;
 }
 
 .input-bar__container:focus-within {
