@@ -69,11 +69,3 @@ CodeMedic AI is structured to be easily deployed on services like Render.
 3. **Build Command:** `cd backend && npm install`
 4. **Start Command:** `cd backend && npm start`
 5. **Environment Variables:** Add `GEMINI_API_KEY` with your key via the Render dashboard.
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests for UI improvements, new features, or bug fixes.
-
-## 📝 License
-
-This project is open-source and available under the ISC License.
