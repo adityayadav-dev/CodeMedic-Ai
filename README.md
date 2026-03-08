@@ -4,7 +4,7 @@ CodeMedic AI is an intelligent, AI-powered debugging assistant designed to help 
 
 **🚀 [Visit the Live App Here!](https://codemedic-ai.onrender.com)**
 
-
+ 
 ## ✨ Features
 
 - **Intelligent Debugging**: Ask questions, paste errors, or describe bugs, and get immediate, AI-driven assistance.
